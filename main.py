@@ -100,25 +100,24 @@ def search_handler():
         print()
 
 
-if __name__ == "__main__":
-    running = True
-    options = ["Spell Lookup", "Advanced Search",
-               "Manually Add Spell", "Download all spells", "Exit"]
+running = True
+options = ["Spell Lookup", "Advanced Search",
+           "Manually Add Spell", "Download all spells", "Exit"]
 
-    while running:
-        print()
-        choice = menu(options, "> ")
-        if choice == "Exit":
-            running = False
-            break
-        elif choice == "Spell Lookup":
-            spell = spell_lookup()
-            print(f'\n{spell}')
-        elif choice == "Advanced Search":
-            spell = search_handler()
-        elif choice == "Manually Add Spell":
-            spell = Spell('', scrape=False)
-        elif choice == "Download all spells":
-            secondchoice = menu(["Yes", "No"], "Are you sure? > ")
-            if secondchoice == "Yes":
-                download_all()
+while running:
+    print()
+    choice = menu(options, "> ")
+    if choice == "Exit":
+        running = False
+        break
+    elif choice == "Spell Lookup":
+        spell = spell_lookup()
+        print(f'\n{spell}')
+    elif choice == "Advanced Search":
+        spell = search_handler()
+    elif choice == "Manually Add Spell":
+        spell = Spell('', scrape=False)
+    elif choice == "Download all spells":
+        secondchoice = menu(["Yes", "No"], "Are you sure? > ")
+        if secondchoice == "Yes":
+            download_all()

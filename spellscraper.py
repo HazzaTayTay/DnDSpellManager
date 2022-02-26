@@ -225,7 +225,8 @@ class Spell():
             else:
                 description, stats = spell
                 self.homebrew = stats["homebrew"]
-                self.name = stats["name"].lower()
+                self.name = stats["name"].lower().replace(
+                    "/", "-").replace(":", "").replace("'", "")
                 self.level = stats["level"].lower()
                 self.spelltype = stats["spelltype"].lower()
                 self.notes = stats["notes"].lower()
