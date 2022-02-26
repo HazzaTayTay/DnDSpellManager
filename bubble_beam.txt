@@ -1,0 +1,14 @@
+name:Duvezin's Bubble Beam
+spelltype:Conjuration
+notes: 
+level:1
+cast:1 Action
+range:Self (30ft line)
+components:V, S, M (a vial of bourbon)
+duration:Instantaneous
+concentration:False
+users:custom
+homebrew:True
+A string of bubbles emanate from your hand, and arethen fired in a 30ft long and 5ft wide line in a direction you choose. The first creature it meets must succeed on a Dexterity saving throw or be encapsulated in the flash freeze of the bubble. On a fail the creature takes 3d6 cold damage and is restrained in the bubble. On success it takes half damage and is not restrained
+If the creature takes damage whilst in the bubble, the bubble is popped and is no longer restrained
+At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the cold damage is increases by 1d6 for each spell slot above 1st
